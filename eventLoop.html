@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Loop</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+    }
+
+    h1{
+        background-color: navy;
+        color: white;
+        text-align: center;
+        margin:20px 0px;
+    }
+
+    .center{
+        display: grid;
+        place-items: center;
+        justify-content: justify;
+        
+        display: flex;
+    }
+
+
+
+    .box{
+        border: 2px solid black;
+        margin: 10px;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="center">
+            <div class="functions box">
+                <h1>Program or Functions</h1>
+                <h2>These are the functions that we will execute.</h2>
+                <div class="fun1">Functions or Program</div>
+                <div class="fun2">Functions or Program</div>
+                <div class="fun3">Functions or Program</div>
+                <div class="fun4">Functions or Program</div>
+            </div>
+            <div class="callStack box">
+                <h1>Call Stack</h1>
+                <h2>This is the call stack from where the functions gets executed.</h2>
+                <h2>There can be lack of storage for all the program to run so they can wait in the callback queue</h2>
+            </div>
+            <div class="heap-memory box">
+                <h1>Heap Memory</h1>
+                <h2>This is the memory where the program is stored in a random manner, this is the place where the waiting time of function is spend.</h2>
+            </div>
+            <div class="callback-queue box">
+                <h1>Callback Queue</h1>
+                <h2>This is the place where the functions that are about to run. Here the function wait for to be executed in the call stack if it is full and doesnot have enough space to run the code.</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
