@@ -77,7 +77,7 @@ Event Propogation :
         var child4 = document.querySelector(".child4")
 
         main.addEventListener("click", ()=>alert('main is clicked'),true)
-        child1.addEventListener("click", ()=>alert('child 1 is clicked'),true)
+        child1.addEventListener("click", ()=>alert('child 1 is clicked'),true)  // changed from event bubbling to event capturing
         child2.addEventListener("click", ()=> alert('child 2 is clicked'),true)
         child3.addEventListener("click",()=>alert('child3 is clicked'),true)
         child4.addEventListener("click",()=>alert('child4 is clicked'),true)
